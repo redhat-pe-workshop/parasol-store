@@ -1,8 +1,8 @@
 openapi: 3.0.2
 info:
-    title: Globex Catalog API 
+    title: Parasol Catalog API 
     version: 1.0.0
-    description: Globex APIs made accessible to global partners to view Globex' catalog and products
+    description: Parasol APIs made accessible to global partners to view Parasol' catalog and products
 paths:
     '/mobile/services/product/category/{categories}':
         summary: Get products by category
@@ -102,7 +102,7 @@ components:
                 id: 1
                 category: clothing
         product:
-            description: Definition of one product in the Globex Catalogue
+            description: Definition of one product in the Parasol Catalogue
             type: object
             properties:
                 itemId:
