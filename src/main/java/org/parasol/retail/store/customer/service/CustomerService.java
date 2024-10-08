@@ -5,14 +5,14 @@ import org.parasol.retail.store.customer.model.dto.CustomerDto;
 import org.parasol.retail.store.customer.model.dto.CustomerMapper;
 import org.parasol.retail.store.customer.model.entity.Customer;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.transaction.Transactional;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.transaction.Transactional;
 
 @ApplicationScoped
 public class CustomerService {
 
     @Transactional
-    @Blocking
+    // @Blocking
     public CustomerDto getCustomerByCustomerId(String userId) {
         return CustomerMapper.toDto(Customer.findByUserId(userId));
     }

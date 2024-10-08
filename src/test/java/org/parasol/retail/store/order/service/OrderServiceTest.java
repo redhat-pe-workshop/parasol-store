@@ -8,7 +8,7 @@ import org.parasol.retail.store.order.model.entity.Order;
 import org.parasol.retail.store.order.service.OrderService;
 import org.junit.jupiter.api.Test;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import java.time.Instant;
 import java.util.List;
 

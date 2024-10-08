@@ -2,7 +2,7 @@ package org.parasol.retail.store.cart.store;
 
 import org.parasol.retail.store.cart.model.Cart;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -2,7 +2,7 @@ package org.parasol.retail.store.order.model.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity(name = "OrderLineItem")
 @Table(name = "line_item")
@@ -20,7 +20,7 @@ public class OrderLineItem extends PanacheEntityBase {
     @Column(name = "quantity")
     public int quantity;
 
-    @Column(name = "price", precision = 8, scale = 2, columnDefinition = "NUMERIC (8, 2)")
+    @Column(name = "price", precision = 8, columnDefinition = "NUMERIC (8, 2)")
     public double price;
 
     @ManyToOne(fetch = FetchType.LAZY)

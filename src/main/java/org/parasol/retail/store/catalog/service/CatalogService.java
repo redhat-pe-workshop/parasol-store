@@ -8,8 +8,8 @@ import org.parasol.retail.store.inventory.model.dto.InventoryDto;
 import org.parasol.retail.store.inventory.service.InventoryService;
 import org.parasol.retail.store.catalog.model.entity.Category;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import java.util.List;
 import java.util.stream.Collectors;
 

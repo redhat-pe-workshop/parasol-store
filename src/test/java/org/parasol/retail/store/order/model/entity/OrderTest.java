@@ -1,12 +1,13 @@
 package org.parasol.retail.store.order.model.entity;
 
+import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 import org.parasol.retail.store.order.model.entity.Order;
 import org.parasol.retail.store.order.model.entity.OrderLineItem;
 import org.parasol.retail.store.order.model.entity.ShippingAddress;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.time.Instant;
 
 import static org.hamcrest.CoreMatchers.notNullValue;

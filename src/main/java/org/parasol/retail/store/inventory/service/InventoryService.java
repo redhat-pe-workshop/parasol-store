@@ -4,7 +4,7 @@ import org.parasol.retail.store.inventory.model.dto.InventoryDto;
 import org.parasol.retail.store.inventory.model.dto.InventoryMapper;
 import org.parasol.retail.store.inventory.model.entity.Inventory;
 
-import javax.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped;
 import java.util.List;
 import java.util.stream.Collectors;
 

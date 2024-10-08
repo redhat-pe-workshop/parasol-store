@@ -3,7 +3,7 @@ package org.parasol.retail.store.inventory.model.entity;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import io.quarkus.panache.common.Parameters;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity(name = "Inventory")

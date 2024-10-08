@@ -4,8 +4,8 @@ import org.parasol.retail.store.cart.model.Cart;
 import org.parasol.retail.store.cart.model.CartItem;
 import org.parasol.retail.store.cart.store.CartStore;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class CartService {

@@ -5,14 +5,14 @@ import org.parasol.retail.store.order.model.dto.OrderDto;
 import org.parasol.retail.store.order.model.dto.OrderMapper;
 import org.parasol.retail.store.order.model.entity.Order;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.transaction.Transactional;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.transaction.Transactional;
 
 @ApplicationScoped
 public class OrderService {
 
     @Transactional
-    @Blocking
+    // @Blocking
     public OrderDto storeOrder(OrderDto orderDto) {
         Order order = OrderMapper.toEntity(orderDto);
         order.persist();

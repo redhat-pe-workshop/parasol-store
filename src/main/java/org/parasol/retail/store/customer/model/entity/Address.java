@@ -2,7 +2,7 @@ package org.parasol.retail.store.customer.model.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity(name = "Address")
 @Table(name = "address")
