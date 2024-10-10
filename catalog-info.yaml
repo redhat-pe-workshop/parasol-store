@@ -6,7 +6,15 @@ metadata:
   owner: redhat-pe-workshop
   annotations:
     github.com/project-slug: redhat-pe-workshop/parasol-store-app
-    backstage.io/techdocs-ref: url:https://github.com/redhat-pe-workshop/parasol-store-app
+    argocd/app-selector: rht-gitops.com/janus-argocd=parasol
+    backstage.io/techdocs-ref: url:https://${{gitlab.host}}/parasol/parasol-store
+    backstage.io/kubernetes-id: parasol-store-app
+    janus-idp.io/tekton : parasol-store-app
+    gitlab.com/project-slug: redhat-pe-workshop/parasol-store    
+    quay.io/repository-slug: "parasol/parasol-store-app"
+    backstage.io/kubernetes-namespace: parasol
+    backstage.io/kubernetes-label-selector: "app=parasol-store"
+
   tags:
     - application
     - store
