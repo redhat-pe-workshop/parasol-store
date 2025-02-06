@@ -125,5 +125,26 @@ public class CatalogResource {
                     return Response.serverError().build();
                 });          
             }     
-        
+    
+    /* DELETE THIS COMMENT LINE
+    @GET
+    @Path("/productCount")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Uni<Response> getProductCount() {
+
+        return Uni.createFrom().voidItem().emitOn(Infrastructure.getDefaultWorkerPool())
+                .onItem().transform(productCount -> catalogService.getProductCount())
+                .onItem().transform(productCount -> {
+                    if (productCount == null) {
+                        return Response.status(Response.Status.NOT_FOUND).build();
+                    } else {
+                        return Response.ok(productCount).build();
+                    }
+                })
+                .onFailure().recoverWithItem(throwable -> {
+                    LOGGER.error("Exception while fetching product count list", throwable);
+                    return Response.serverError().build();
+                });          
+    }
+    DELETE THIS COMMENT LINE */       
 }

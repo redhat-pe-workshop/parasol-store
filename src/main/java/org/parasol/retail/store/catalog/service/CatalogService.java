@@ -106,4 +106,12 @@ public class CatalogService {
         return Category.listAll();
     }
 
+
+    public int getProductCount() {
+        List<Product> productList = Product.findProducts(0, 8);
+        List<ProductDto> productDtoList;
+        productDtoList = toDto(productList);
+        
+        return Math.toIntExact(Product.count());
+    }
 }
