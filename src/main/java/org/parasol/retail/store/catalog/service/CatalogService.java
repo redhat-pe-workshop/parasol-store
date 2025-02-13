@@ -107,11 +107,7 @@ public class CatalogService {
     }
 
 
-    public int getProductCount() {
-        List<Product> productList = Product.findProducts(0, 8);
-        List<ProductDto> productDtoList;
-        productDtoList = toDto(productList);
-        
-        return Math.toIntExact(Product.count());
+    public long getProductCount() {
+        return Product.count();
     }
 }
