@@ -13,7 +13,10 @@ release.properties
 bin/
 
 # IntelliJ
-.idea
+
+.idea/*
+!.idea/externalDependencies.xml
+
 *.ipr
 *.iml
 *.iws
@@ -22,7 +25,8 @@ bin/
 nb-configuration.xml
 
 # Visual Studio Code
-.vscode/settings*
+.vscode/*
+!.vscode/extensions.json
 .factorypath
 
 # OSX
